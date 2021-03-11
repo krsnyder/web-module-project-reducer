@@ -34,20 +34,20 @@ function App() {
 
             <div className="row">
               <CalcButton onClick={() => dispatch(applyNumber(1))} value={1}/>
-              <CalcButton value={2}/>
-              <CalcButton value={3}/>
+              <CalcButton onClick={() => dispatch(applyNumber(2))} value={2}/>
+              <CalcButton onClick={() => dispatch(applyNumber(3))} value={3}/>
             </div>
 
             <div className="row">
-              <CalcButton value={4}/>
-              <CalcButton value={5}/>
-              <CalcButton value={6}/>
+              <CalcButton onClick={() => dispatch(applyNumber(4))} value={4}/>
+              <CalcButton onClick={() => dispatch(applyNumber(5))} value={5}/>
+              <CalcButton onClick={() => dispatch(applyNumber(6))} value={6}/>
             </div>
 
             <div className="row">
-              <CalcButton value={7}/>
-              <CalcButton value={8}/>
-              <CalcButton value={9}/>
+              <CalcButton onClick={() => dispatch(applyNumber(7))} value={7}/>
+              <CalcButton onClick={() => dispatch(applyNumber(8))} value={8}/>
+              <CalcButton onClick={() => dispatch(applyNumber(9))} value={9}/>
             </div>
 
             <div className="row">
