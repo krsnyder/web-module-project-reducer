@@ -48,7 +48,7 @@ button:active {
 }
 
 .ce_button .col-xs-4{
-  width: 100%;
+  width: 100% !important;
 }
 
 .ce_button .col-xs-4 .btn{

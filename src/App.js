@@ -1,16 +1,19 @@
-import React from 'react';
-
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable no-unused-vars */
+import React, { useState, useReducer} from 'react';
+import reducer, {initialState, calculateResult} from './reducers'
 import './App.css';
 
 import TotalDisplay from './components/TotalDisplay';
 import CalcButton from './components/CalcButton';
 
 function App() {
+  const [state, dispatch] = useReducer(reducer, initialState)
 
   return (
     <div className="App">
       <nav className="navbar navbar-dark bg-dark">
-        <a className="navbar-brand" href="#"><img width="40px" src="./Lambda-Logo-Red.png"/> Lambda Reducer Challenge</a>
+        <a className="navbar-brand" href="#"><img width="40px" src="./Lambda-Logo-Red.png" alt="Lambda"/> Lambda Reducer Challenge</a>
       </nav>
 
       <div className = "container row mt-5">
