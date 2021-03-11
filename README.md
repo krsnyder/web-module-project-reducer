@@ -1,4 +1,4 @@
-# The Reducer Pattern Module Project: The Calculator
+d# The Reducer Pattern Module Project: The Calculator
 
 This module explored the reducer pattern. During the module, you studied what immutability is, what reducers, actions and dispatch are, and how to use the reducer hook. In this project, you will practice each of the steps of building state and actions into an application. We will do this by both adding in and building from scratch all of the pieces of the reducer pattern.
 
@@ -52,7 +52,7 @@ export const initialState = {
 * [ ] Check to see that your display correctly reflects the change to your state.
 
 #### Connect a premade action.
-> *Now that we can see our state, let's change allow the user to change it. Let's start with a simple premade action...adding one to our total.*
+> *Now that we can see our state, let's allow the user to change it. Let's start with a simple premade action...adding one to our total.*
 * [ ] Note the `ADD_ONE` action case (in ./reducer/index.js) and `addOne` action creator (in ./actions/index.js). This action adds 1 to our total.
 * [ ] Import the `addOne` action creator into App.js.
 * [ ] Within `App.js`, create an event handler connected to the 1 button's `onClick` method.
