@@ -29,7 +29,7 @@ function App() {
             <div className="row">
               <CalcButton onClick={() => dispatch(mem1())} value={"M+"}/>
               <CalcButton onClick={() => dispatch(mem2())} value={"MR"}/>
-              <CalcButton value={"MC"}/>
+              <CalcButton onClick={() => dispatch(mem3())} value={"MC"}/>
             </div>
 
             <div className="row">
