@@ -48,6 +48,12 @@ const reducer = (state, action) => {
                 ...state,
                 memory: state.total
             })
+        case (MEM2):
+            return ({
+                ...state,
+                total : calculateResult(state.total, state.memory, state.operation)
+            })
+              
             
         default:
             return state;

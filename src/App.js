@@ -3,7 +3,7 @@
 import React, { useState, useReducer} from 'react';
 import reducer, {initialState, calculateResult} from './reducers'
 import './App.css';
-import {addOne, applyNumber, changeOperation, clearDisplay, mem1} from './actions'
+import {addOne, applyNumber, changeOperation, clearDisplay, mem1, mem2, mem3} from './actions'
 import TotalDisplay from './components/TotalDisplay';
 import CalcButton from './components/CalcButton';
 
@@ -27,8 +27,8 @@ function App() {
             </div>
             
             <div className="row">
-              <CalcButton onClick={() => dispatch(mem1())}value={"M+"}/>
-              <CalcButton value={"MR"}/>
+              <CalcButton onClick={() => dispatch(mem1())} value={"M+"}/>
+              <CalcButton onClick={() => dispatch(mem2())} value={"MR"}/>
               <CalcButton value={"MC"}/>
             </div>
 
